@@ -49,17 +49,9 @@ To run this project locally, follow these steps:
 
    You should now be able to interact with the HR Management Website locally on your machine.
 
-## Contributing
-
-Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Technologies Used
 
-- Front-end: HTML, CSS, JavaScript
+- Front-end: HTML, CSS, JavaScript, AJAX
 - Back-end: Django
 - Database: SQLite
 
