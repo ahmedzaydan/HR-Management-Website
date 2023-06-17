@@ -1,0 +1,78 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f8f029d02.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="{%static 'CSS/HeaderStyle.css'%}">
+    <title>Home Page</title>
+</head>
+<header class="overlay">
+    <nav class="navbar navbar-color">
+        <div class="contanier">
+            <a href="{% url 'Home'%}" class="logo">
+                <span title="bitrex">
+                    <img class="img-adjusting" src="{%static 'Images/BitriX logo.png'%}" alt="bitrex">
+                </span>
+            </a>
+            <div class="slogan-place">
+                <span class="text contanier">
+                    <h5>
+
+                    </h5>
+                </span>
+            </div>
+            <form method="GET" action="{% url 'Results'%}">
+                <div class="search-container">
+                    <input type="text" name="search" placeholder="Search..." class="search-input">
+
+                    <button class="search-btn hide"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <div class="adj-width">
+                <div class="contanier line">
+                    <div class="line2 adj-width">
+                        <hr class="w-100 mx" style="border-top-width: 0.5px; border-color: white;">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-surf">
+                <ul class="nav navbar-nav flex-grow-1">
+                    <li>
+                        <a class="nav-link active" href="{% url 'Home'%}">Home</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link " id="nav1" href="{% url 'AddEmployee'%}">Add Employee</a>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link " id="nav3" href="{%url 'VacationRequests'%}">Review
+                            Vacations</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link " id="nav4" href="{% url 'AboutUs'%}">About Us</a>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
